@@ -14,4 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     "rktjmp/lush.nvim",
     { dir = '/home/randomhuman/retrowave', lazy = true },
+
+		'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+		{"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
 	})
+
+
+
